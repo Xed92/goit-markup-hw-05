@@ -66,10 +66,12 @@ p {
   );
 }
 /* ===============header================= */
+.header {
+  border-bottom: 1px solid #ececec;
+}
 .header-container {
   display: flex;
   align-items: center;
-  border-bottom: 1px solid #ececec;
 }
 
 .logotype-header {
@@ -92,17 +94,6 @@ p {
   align-items: center;
   gap: 50px;
 }
-/* .thumb {
-  position: absolute;
-  width: 100%;
-  height: 4px;
-  top: 100%;
-  transform: translate(0, -75%);
-  background: var(--hover-focus-color-link);
-  border-radius: 2px;
-  opacity: 0;
-} */
-
 .nav-link {
   position: relative;
   font-weight: 500;
@@ -641,7 +632,10 @@ p {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.2);
+  transition-property: opacity;
+  transition-duration: var(--animation-duration);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .backdrop.is-hidden {
   opacity: 0;
