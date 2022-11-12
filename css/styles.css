@@ -12,6 +12,7 @@ body {
   --hover-focus-color-link: #2196f3;
   --tel-mail-footer-color: rgba(255, 255, 255, 0.6);
   --tel-mail-header-color: #757575;
+  --footer-background: #2f303a;
   --indent: 30px;
   --items: 4;
   --color-icons: #757575;
@@ -520,7 +521,7 @@ p {
 /* ========================Clients================ */
 /* =======================footer==================== */
 .footer {
-  background-color: #2f303a;
+  background-color: var(--footer-background);
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -529,7 +530,7 @@ p {
   align-items: baseline;
 }
 .footer-container:not(last-child) {
-  gap: 95px;
+  gap: 93px;
 }
 .logotype-footer {
   font-family: "Raleway", sans-serif;
@@ -624,6 +625,54 @@ p {
 }
 .social-lists:not(:first-child) {
   gap: 10px;
+}
+/* =======================subscription======================= */
+.subscription-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 12px;
+}
+.subscription-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+.user-email {
+  width: 358px;
+  font-size: 16px;
+  line-height: calc(20 / 16);
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 16px;
+  color: rgba(255, 255, 255, 0.6);
+  background-color: var(--footer-background);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+}
+.btn-subscription {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  gap: 10px;
+  width: 200px;
+  height: 50px;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  background: #2196f3;
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  cursor: pointer;
 }
 /*=========================backdrop========================= */
 .backdrop {
